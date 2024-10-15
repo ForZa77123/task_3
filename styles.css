@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Putih sebagai latar belakang */
+}
+
+header {
+    background-color: #6a0dad; /* Ungu untuk header */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    background-color: #6495ed; /* Biru cerah untuk konten utama */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #eb9df2; /* Biru tua untuk heading */
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #b19cd9; /* Ungu muda untuk footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: #003366; /* Biru tua untuk navigasi */
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* handphone */
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav, #main {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* pc/laptop */
+@media (min-width: 1025px) {
+    nav  {
+        flex-direction: row;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
